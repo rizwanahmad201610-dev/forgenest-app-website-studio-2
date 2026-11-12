@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(306%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(336%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EF%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="description" content="ForgeNest · App &amp; Website Studio | deployed with HTMLaunch">
+<link rel="canonical" href="https://rizwanahmad201610-dev.github.io/forgenest-app-website-studio-2/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ForgeNest · App &amp; Website Studio">
+<meta property="og:title" content="ForgeNest · App &amp; Website Studio">
+<meta property="og:description" content="ForgeNest · App &amp; Website Studio | deployed with HTMLaunch">
+<meta property="og:url" content="https://rizwanahmad201610-dev.github.io/forgenest-app-website-studio-2/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frizwanahmad201610-dev.github.io%2Fforgenest-app-website-studio-2%2F?w=1200&h=630">
+<meta property="og:image:alt" content="ForgeNest · App &amp; Website Studio">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ForgeNest · App &amp; Website Studio">
+<meta name="twitter:description" content="ForgeNest · App &amp; Website Studio | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frizwanahmad201610-dev.github.io%2Fforgenest-app-website-studio-2%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="ForgeNest · App &amp; Website Studio">
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101425"><title>ForgeNest · App & Website Studio</title>
+<link rel="stylesheet" href="site/styles.css">
+</head>
+<body>
+<div style="position:relative;z-index:100;background:#153d5e;color:white;padding:15px 20px;text-align:center;font:600 14px system-ui,sans-serif;line-height:1.6">
+  You are viewing the HTML preview. To CREATE real Windows .exe installers, double-click <strong>Start_Website.vbs</strong> in this folder, then open <a href="http://127.0.0.1:8765/" style="color:#9ee7ff;text-decoration:underline">the working website</a>. The preview alone cannot compile apps.
+</div>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">✦</span><div><b>forge<span>nest</span></b><small>CREATOR STUDIO</small></div></div>
+    <div class="sidebar-group">WORKSPACE</div>
+    <nav class="side-nav" aria-label="Primary">
+      <button class="nav-btn active" data-tab="build"><span class="nav-ico">⬡</span> App Builder <span class="nav-chevron">›</span></button>
+      <button class="nav-btn" data-tab="websites"><span class="nav-ico">◈</span> Website Builder <span class="nav-chevron">›</span></button>
+      <button class="nav-btn" data-tab="projects"><span class="nav-ico">▤</span> My Projects <span class="counter" id="project-count">0</span></button>
+    </nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span><span id="engine-label">Checking build engine…</span><div class="mini-note">Runs privately on your computer. Nothing is publicly hosted.</div></div>
+  </aside>
+  <main class="main">
+    <div class="topbar"><div class="breadcrumb">WORKSPACE <span>/</span> <strong id="crumb">App Builder</strong></div><button class="small-btn" onclick="refreshAll()">↻ Refresh</button></div>
+    <section class="tab-page active" id="page-build">
+      <div class="hero"><div class="eyebrow">YOUR IDEAS. REAL INSTALLERS.</div><h1>Turn your code into <em>an app.</em></h1><p>Upload Python or Java, add your own logo, and build one Windows installer to share.</p><div class="hero-orbit">{  }</div></div>
+      <div class="step-title"><span class="step-num">01</span><div><h2>Choose your language</h2><p>Pick what your app was written in</p></div></div>
+      <div class="lang-grid">
+        <button class="lang-card selected" id="select-python" data-lang="python"><div class="lang-icon python">🐍</div><div><strong>Python</strong><small>.py or .pyw files</small></div><span class="choice">✓</span></button>
+        <button class="lang-card" id="select-java" data-lang="java"><div class="lang-icon java">☕</div><div><strong>Java</strong><small>.jar application files</small></div><span class="choice">✓</span></button>
+      </div>
+      <form id="build-form">
+        <div class="step-title separated"><span class="step-num">02</span><div><h2>Choose a version</h2><p>The build computer needs the selected interpreter or JDK installed</p></div></div>
+        <div class="panel"><label for="runtime">Detected installed versions</label><select id="runtime" name="runtime" required><option value="">Checking your computer…</option></select><div class="version-hint" id="runtime-info">Java builds require a JDK with jpackage; Python builds use PyInstaller.</div><div class="version-chips" id="version-chips"></div></div>
+        <div class="step-title separated"><span class="step-num">03</span><div><h2>Upload your app</h2><p>Include the main program and any pictures, sounds or other resources</p></div></div>
+        <div class="panel">
+          <div class="upload-row"><label class="dropzone" for="app-files"><span class="upload-glyph">⇧</span><strong>Choose app files</strong><small>Multiple files allowed</small><input id="app-files" type="file" multiple></label><label class="dropzone" for="app-folder"><span class="upload-glyph">▣</span><strong>Choose an entire folder</strong><small>Keep your asset folders together</small><input id="app-folder" type="file" webkitdirectory multiple></label></div>
+          <div class="file-list" id="app-file-list">No files selected yet.</div>
+          <div class="field"><label for="main-file">Main file to launch</label><select id="main-file" required><option value="">Upload an app first</option></select></div>
+        </div>
+        <div class="step-title separated"><span class="step-num">04</span><div><h2>Your logo & installer</h2><p>We convert a PNG, JPG or ICO image into a Windows app icon</p></div></div>
+        <div class="panel">
+          <div class="form-grid"><div class="field"><label for="app-name">Application / installer name</label><div class="suffix-field"><input id="app-name" placeholder="My Cool App" maxlength="64" required><span>.exe</span></div><div class="field-hint">Type the name only. We add .exe automatically.</div></div><div class="field"><label for="app-icon">Your app logo (optional)</label><input type="file" id="app-icon" accept="image/png,image/jpeg,image/webp,image/bmp,image/x-icon,.ico"><div class="field-hint">Used for your launcher and installer.</div></div></div>
+          <div class="icon-preview-row"><div class="icon-preview" id="icon-preview">✦</div><div><strong>App icon preview</strong><p>Choose a picture to replace the default icon.</p></div></div>
+          <div class="field" id="java-class-row" hidden><label for="main-class">Java main class (only if JAR has no Main-Class)</label><input id="main-class" placeholder="com.example.Main"></div>
+          <div class="checkboxes"><label><input type="checkbox" id="gui-toggle" checked> My Python app has windows/buttons (hide black console)</label><label><input type="checkbox" id="missing-tools"> Install PyInstaller automatically if missing (needs internet)</label><label><input type="checkbox" id="requirements"> Install packages from uploaded requirements.txt (trusted projects only)</label></div>
+          <button class="primary" type="submit" id="build-submit"><span>⚡</span> Build my .exe installer <span>→</span></button><p class="form-note">Generates ONE downloadable Setup.exe. The installed app will have a launcher icon and shortcut.</p>
+        </div>
+      </form>
+    </section>
+    <section class="tab-page" id="page-websites">
+      <div class="hero web-hero"><div class="eyebrow">CREATE SOMETHING ONLINE</div><h1>Build your <em>website.</em></h1><p>Generate a website from your idea or upload your HTML, CSS and JavaScript files. Publish later on a free subdomain.</p><div class="hero-orbit">&lt;/&gt;</div></div>
+      <div class="panel web-options"><h2>Would you like to build a website?</h2><p>You can create one from a description, use AI with your own API key, or upload a site you already made.</p><div class="choice-strip"><button class="mode-btn selected" data-mode="template">✨ Create from idea</button><button class="mode-btn" data-mode="ai">✧ Use AI</button><button class="mode-btn" data-mode="upload">⇧ Upload my site</button></div></div>
+      <form id="website-form" class="panel large-form">
+        <div class="field"><label for="site-name">Your website's name</label><input id="site-name" maxlength="64" placeholder="Rizwan's Awesome Website" required></div>
+        <div id="site-prompt-row" class="field"><label for="site-prompt">What is your website about?</label><textarea id="site-prompt" rows="4" placeholder="A colorful gaming website with a welcome section, projects, and a contact button…"></textarea><div id="prompt-info" class="field-hint">Creates a customizable starter page without AI.</div></div>
+        <div id="site-ai-key-row" class="field" hidden><label for="site-ai-key">OpenAI API key (optional paid feature)</label><input id="site-ai-key" type="password" autocomplete="off" placeholder="sk-…"><small>The key is used for this request only; ask a parent before using paid AI services.</small></div>
+        <div id="site-upload-row" class="field" hidden><label for="site-files">Your website files</label><input id="site-files" type="file" multiple accept=".html,.css,.js,.json,.svg,.png,.jpg,.jpeg,.webp,.gif,.woff,.woff2,.zip"><input id="site-folder" type="file" webkitdirectory multiple><div id="site-file-count" class="field-hint">Upload a ZIP or index.html and any other website resources. AI mode can also improve an uploaded site.</div></div>
+        <div class="domain-box"><div class="domain-head"><div><strong>🌍 Website address</strong><p>Choose a free host address or connect a custom domain later</p></div><span class="free-tag">FREE OPTION</span></div><div class="domain-example" id="domain-idea">your-project.netlify.app</div> <button class="small-btn" type="button" id="domain-generate">↻ New name idea</button><p>Free hosting subdomains are available from services like Netlify. Names must be available when you publish; this tool does not reserve or buy domains.</p><div class="domain-actions"><a href="https://app.netlify.com/drop" target="_blank" rel="noreferrer">Publish with Netlify ↗</a><a href="https://www.cloudflare.com/developer-platform/products/pages/" target="_blank" rel="noreferrer">Cloudflare Pages ↗</a></div></div>
+        <button class="primary" type="submit" id="site-submit">✧ Create website ZIP <span>→</span></button><p class="form-note">Website files stay in your Projects tab. Publishing is a separate step.</p>
+      </form>
+    </section>
+    <section class="tab-page" id="page-projects">
+      <div class="hero project-hero"><div class="eyebrow">YOUR CREATIVE LIBRARY</div><h1>All your <em>projects.</em></h1><p>Download your installers and websites again, view build logs, or export a project to another computer.</p><div class="hero-orbit">▤</div></div>
+      <div class="panel import-panel"><div><strong>Working on another computer?</strong><p>Download a Project ZIP here, then import it using the button on the other computer.</p></div><label class="small-btn outline" for="import-project">⇧ Import Project ZIP<input type="file" accept=".zip" id="import-project" hidden></label></div>
+      <div class="projects-header"><h2>Saved builds</h2><button class="small-btn" onclick="loadProjects()">↻ Refresh projects</button></div><div id="projects-list" class="project-list"><div class="empty-state">Loading your projects…</div></div>
+    </section>
+    <footer class="main-footer">ForgeNest Studio · Private local workspace · No account needed</footer>
+  </main>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="log-dialog"><div class="dialog-title"><strong>Build details</strong><button onclick="document.getElementById('log-dialog').close()">✕</button></div><pre id="build-log"></pre></dialog>
+<script src="site/app.js"></script>
+</body>
+</html>
